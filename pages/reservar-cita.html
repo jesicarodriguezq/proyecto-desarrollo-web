@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display+SC:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f72e1dba58.js" crossorigin="anonymous"></script>
+    <title>Reservar Cita-Agencia Gráfica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-bar">
+                <a href="../index.html"><img src="../assets/svg/logo.svg" alt="logo"></a>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../pages/nosotros.html">nosotros</a></li>
+                <li><a href="../pages/servicios.html">servicios</a></li>
+                <li><a href="../pages/proyectos.html">proyectos</a></li>
+                <li><a href="../pages/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section  class="main-reservar">
+            <div class="contenedor-reservar">
+                <div class="reservar-titulo">
+                    <img src="../assets/svg/destellos.svg" alt="destellos">
+                    <h1>RESERVAR CITA</h1>
+                    <img src="../assets/svg/destellos.svg" alt="destellos">                
+                </div>
+                <div class="reservar-texto">
+                    <p>Para cada producto vamos a necesitar elementos que quizas sea usted quien los tenga, por ejemplo, logos, sellos y/o los colores RGB y/o CMYK.</p>
+                    <p>Por favor le pedimos que anteriormente a la cita tenga preparado esos elementos para poder enviarnoslo al correo indicado por el empleado que lo estará atendiendo.</p>                
+                </div>
+            </div>
+            <div class="formulario-reservar">
+                <form action="">
+                    <div>
+                        <div class="input-superior">
+                            <input id="input-nombre" type="text" placeholder="Nombre" required>
+                            <input id="input-apellido" type="text" placeholder="Apellido" required>
+                            <input id="input-email" type="email" placeholder="E-mail" required>
+                            <input id="input-celular" type="text" placeholder="Celular" required>
+                        </div>
+                        <div>
+                            <select id="input-opciones" required>
+                                <option value="'Elegir servicio'">'Elegir servicio'</option>
+                                <option value="Tarjetas de presentación">Tarjetas de presentación</option>
+                                <option value="Stickers">Stickers</option>
+                                <option value="Post - Instagram">Post - Instagram</option>
+                                <option value="Flyers - Triptico">Flyers - Triptico</option>
+                                <option value="Folleto">Folleto</option>
+                                <option value="Banners">Banners</option>
+                                <option value="Gift Voucher">Gift Voucher</option>
+                            </select>
+                            <textarea name="detalles" id="detalles" placeholder="Envíe detalles del contenido que quiere que tenga el producto."></textarea>
+                            <input id="input-date" type="date" required>
+                            <input id="input-time" type="time" required>
+                        </div>
+                        <div class="radio-tipoCita">
+                            <input type="radio" name="tipo-cita">Cita presencial
+                            <input type="radio" name="tipo-cita">Cita virtual
+                        </div>
+                    </div>
+                    <div class="formulario-boton">
+                        <a href="#">ENVIAR</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="contenedor-contacto">
+                <h3>CONTACTO</h3>
+                <ul class="contacto-lista">
+                    <li><i class="fa-solid fa-location-dot"></i>Av. Libertad 5833</li>
+                    <li><i class="fa-solid fa-earth-americas"></i>Rosario, Argentina</li>
+                    <li><i class="fa-solid fa-phone"></i>+54 341 2646453</li>
+                    <li><i class="fa-solid fa-envelope"></i>agenciagrafica@gmail.com</li>
+                </ul>
+                <div class="iconos-footer">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contenedor-newsletter">
+                <div class="newsletter-texto">
+                    <h4>NEWSLETTER</h4>
+                    <p>Si queres suscribirte a nuestro newsletter mensual para recibir descuentos y ofertas del momento, dejanos tu mail y nos pondremos en contacto.</p>
+                </div>
+                <div class="newsletter-input">
+                    <form action="">
+                        <input type="email" name="email" placeholder="ejemplo@gmail.com">
+                    </form>
+                    <a href="#">ENVIAR</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

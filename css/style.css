@@ -1,0 +1,690 @@
+/**
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+font-family: 'Cinzel Decorative', cursive;
+
+COLORES:
+#cab8ff
+#fff9ec
+#805cec
+#f6f078
+
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+/** --------- HEADER --------- **/
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #cab8ff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-bar {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.nav-bar li {
+    font-size: 15px;
+    list-style: none;
+    padding-right: 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #805cec;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.nav-bar li:hover {
+    transform: scale(1.15);
+}
+
+.nav-bar a:hover {
+    color: #f6f078;
+}
+
+
+/** --------- MAIN --------- **/
+
+.presentacion {
+    background-color: #cab8ff;
+    padding-top: 70px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.contenedor-presentacion-inicial {
+    width: 70%;
+    height: 400px;
+    background-color: #fff9ec;
+    box-shadow: 8px 8px 7px 0px #aba9af;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-i-texto h1 {
+    color: #805cec;
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.p-i-texto p {
+    color: #f6f078;
+    font-size: 23px;
+    font-weight: 500;
+    width: 400px;
+    height: 200px;
+    text-indent: 20px;
+    padding: 5px 0px 0px 20px;
+}
+
+.p-i-img {
+    width: 500px;
+    height: 350px;
+    margin: 20px 0px 0px 30px;
+}
+
+
+
+
+
+.contenedor-presentacion-secundaria {
+    display: flex;
+}
+
+.p-s-item {
+    margin: 40px 20px 20px ;
+    text-align: center;
+    justify-content: center;
+}
+
+.p-s-item p {
+    width: 250px;
+    height: 80px;
+    color: #ffffff;
+}
+
+.p-s-item img {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+
+
+.titulo-texto-svg {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.titulo {
+    padding-top: 70px;
+}
+
+.titulo-texto-svg h1, h2 {
+    color: #805cec;
+    font-size: 30px ;
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 0px 10px;
+}
+
+.titulo-texto-svg img {
+    width: 40px;
+    height: 40px;
+}
+
+.galeria-img {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.galeria-img img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 0px 20px 20px 0px;
+}
+
+
+
+
+
+
+
+/** --------- FOOTER --------- **/
+
+.footer {
+    background-color: #cab8ff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.contenedor-contacto h3, h5 {
+    color: #ffffff;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 25px;
+}
+
+.contacto-lista li {
+    color: #805cec;
+    list-style: none;
+    padding-left: 5px;
+}
+
+.contacto-lista i {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.iconos-footer i {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px 0px 0px 20px;
+    transition: 1s;
+}
+
+.iconos-footer i:hover {
+    color: #805cec;
+    cursor: pointer;
+    transform: rotate(360deg) scale(1.7);
+}
+
+
+
+
+
+.contenedor-newsletter {
+    justify-content: space-between;
+}
+.newsletter-texto {
+    margin-bottom: 80px;
+}
+
+.newsletter-texto h4 {
+    color: #ffffff;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 25px;
+}
+
+.newsletter-texto p {
+    color: #805cec;
+    width: 250px;
+    height: 40px;
+}
+
+.newsletter-input input {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 25px;
+    padding: 10px 0px 10px 5px;
+    margin-bottom: 20px;
+}
+
+.newsletter-input a {
+    text-decoration: none;
+    font-family:  'Cinzel Decorative', cursive;
+    font-weight: 700;
+    color:#ffffff;
+    background-color: #805cec;
+    box-shadow: 8px 8px 10px -3px #979595bf;
+    border-radius: 20px;
+    padding: 5px 50px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+/**__________________________  nosotros.html _________________________________**/
+
+.cards-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.persona-card {
+    width: 300px;
+    height: 500px;
+    background-color: #cab8ff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px #805cec;
+}
+
+#nombre-persona {
+    color: #805cec;
+    font-size: 25px;
+    font-weight: 700;
+    font-family:  'Cinzel Decorative', cursive;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.persona-img img {
+    width: 260px;
+    height: 280px;
+    border-radius: 5px;
+    margin: 20px 20px;
+}
+
+.persona-lista li {
+    color: #ffffff;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+/**__________________________  servicios.html _________________________________**/
+
+.servicio-card {
+    width: 1000px;
+    height: 300px;
+    background-color: #cab8ff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px #805cec;
+    margin: 0px 265px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#servicio-titulo {
+    color: #805cec;
+    font-size: 25px;
+    font-weight: 700;
+    font-family:  'Cinzel Decorative', cursive;
+    margin-bottom: 20px;
+}
+
+.servicio-texto {
+    margin: 50px 0px 0px 40px;
+}
+
+.servicio-texto p {
+    width: 350px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    text-indent: 20px;
+    margin-bottom: 80px;
+}
+
+.boton-reservar-cita a{
+    background-color: #fff9ec;
+    color: #805cec;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:  'Cinzel Decorative', cursive;
+    box-shadow: 8px 8px 10px -3px #805cec;
+    border-radius: 20px;
+    padding: 5px 40px;
+    margin: 50px 0px 0px 80px;
+}
+
+.boton-reservar-cita i {
+    color: #805cec;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.servicio-img img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 25px 50px 25px 0px;
+}
+
+
+
+/**__________________________  reservar-cita.html _________________________________**/
+
+
+
+.main-reservar {
+    display: flex;
+}
+
+.contenedor-reservar {
+    width: 500px;
+    height: 400px;
+    background-color: #cab8ff;
+    box-shadow: 8px 8px 10px -3px #aba9af;
+    border-radius: 20px;
+    margin: 80px 0px 0px 200px;
+}
+
+.reservar-titulo {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.reservar-titulo h1 {
+    color: #805cec;
+    font-size: 30px ;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.reservar-titulo img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.reservar-texto {
+    color: #ffffff;
+    font-size: 20px;
+    text-indent: 20px;
+    padding: 0px 30px;
+}
+
+
+
+
+.formulario-reservar {
+    width: 500px;
+    height: 610px;
+    background-color: #f6f078;
+    box-shadow: 8px 8px 10px -3px #805cec;
+    border-radius: 20px;
+    margin: 80px 0px 50px 100px;
+    padding: 70px 40px;
+}
+
+#input-nombre {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 205px;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#input-apellido {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 205px;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#input-email {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 415px;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#input-celular {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 415px;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+#input-opciones {
+    color: #6c6b70;
+    border-style: none;
+    border-radius: 5px;
+    width: 415px;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+#detalles {
+    width: 415px;
+    height: 150px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 0px 0px 10px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#input-date {
+    color: #805cec;
+    width: 205px;
+    height: 25px;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#input-time {
+    color: #805cec;
+    width: 205px;
+    height: 25px;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-tipoCita{
+    color: #805cec;
+}
+
+.radio-tipoCita input {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.formulario-boton a {
+    text-decoration: none;
+    font-family:  'Cinzel Decorative', cursive;
+    font-weight: 700;
+    color:#805cec;
+    background-color: #cab8ff;
+    box-shadow: 8px 8px 10px -3px #cbc2c2bf;
+    border-radius: 20px;
+    padding: 5px 50px;
+    margin-left: 125px;
+}
+
+
+
+
+/**__________________________  proyectos.html _________________________________**/
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin: 0px 0px 40px 200px;
+}
+
+.contenedor-galeria img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.contenedor-galeria img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+
+/**__________________________  contacto.html _________________________________**/
+
+
+.contenedor-contact {
+    width: 80%;
+    height: 550px;
+    background-color: #cab8ff;
+    box-shadow: 8px 8px 10px -3px #805cec;
+    border-radius: 20px;
+    display: flex;
+    margin: 0px 0px 50px 150px;
+    padding: 60px;
+}
+
+
+
+
+.contact-mapa iframe {
+    border-radius: 10px;
+    width: 500px;
+    height: 430px;
+    margin-left: 20px;
+}
+
+.contact-formulario {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contact-formulario form {
+    margin: 30px 0px 0px 100px;
+}
+
+
+
+#titulo-contact {
+    color: #805cec;
+    font-size: 20px ;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    margin-left: 80px;
+}
+
+#input-nombre-contact {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 225px;
+    height: 25px;
+    padding: 15px 0px 15px 10px;
+    margin-bottom: 15px;
+}
+
+#input-apellido-contact {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 225px;
+    height: 25px;
+    padding: 15px 0px 15px 10px;
+    margin-bottom: 15px;
+}
+
+#input-email-contact {
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 455px;
+    height: 25px;
+    padding: 15px 0px 15px 10px;
+    margin-bottom: 15px;
+}
+
+#textarea-contact{
+    color: #805cec;
+    border-style: none;
+    border-radius: 5px;
+    width: 455px;
+    height: 200px;
+    padding: 5px 0px 0px 10px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+
+
+.boton-contact a {
+    text-decoration: none;
+    font-family:  'Cinzel Decorative', cursive;
+    font-weight: 700;
+    color:#ffffff;
+    background-color: #805cec;
+    box-shadow: 8px 8px 10px -3px #979595bf;
+    border-radius: 20px;
+    padding: 5px 50px;
+    margin-left: 145px;
+}
+
+
+
+.iconos-footer-contact {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 170px;
+}
+
+.iconos-footer-contact a{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px 0px 0px 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.iconos-footer-contact a:hover {
+    color: #805cec;
+    transform: scale(1.7) rotate(360deg);
+}
