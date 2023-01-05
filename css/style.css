@@ -31,25 +31,28 @@ nav {
     height: 50px;
     background-color: #cab8ff;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
 }
 
 .nav-bar {
     display: flex;
+    gap: 20px;
+    justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
 }
 
 .logo-bar {
     width: 40px;
     height: 40px;
-    margin: 5px 10px;
+    padding: 5px 0px 0px 5px
 }
 
 .nav-bar li {
     font-size: 15px;
     list-style: none;
-    padding-right: 15px;
+    padding: 5px 0px 0px 10px;
 }
 
 .nav-bar a {
@@ -263,6 +266,10 @@ nav {
     margin-bottom: 20px;
 }
 
+.newsletter-input ::placeholder {
+    color: #f6f078;
+}
+
 .newsletter-input a {
     text-decoration: none;
     font-family:  'Cinzel Decorative', cursive;
@@ -327,12 +334,12 @@ nav {
 /**__________________________  servicios.html _________________________________**/
 
 .servicio-card {
-    width: 1000px;
+    width: 70%;
     height: 300px;
     background-color: #cab8ff;
     border-radius: 15px;
     box-shadow: 8px 8px 5px 0px #805cec;
-    margin: 0px 265px 30px;
+    margin: 0px 265px 30px 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -687,4 +694,170 @@ nav {
 .iconos-footer-contact a:hover {
     color: #805cec;
     transform: scale(1.7) rotate(360deg);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+/**____________________ index.html ______________________**/
+
+
+/**------------- main -------------**/
+
+.contenedor-presentacion-inicial {
+    width: 90%;
+    height: 200px;
+    padding-top: 50px;
+
+}
+
+.p-i-texto h1 {
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+.p-i-texto p {
+    font-size: 18px;
+}
+
+.p-i-img {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+
+.p-s-item p {
+    width: 180px;
+}
+
+.p-s-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.titulo-texto-svg h1, h2 {
+    font-size: 25px;
+}
+
+.titulo-texto-svg img {
+    width: 30px;
+    height: 30px;
+}
+
+.galeria-img {
+    margin-left: 20px;
+}
+
+.img-inicio-2, .img-inicio-3, .img-inicio-5, .img-inicio-6 {
+    display: none;
+}
+
+
+
+
+/**____________________  sobre-nosotros.html ______________________**/
+
+.cards-nosotros {
+    flex-flow: row wrap;
+}
+
+.persona-card {
+    margin-top: 30px;
+}
+
+
+
+
+/**____________________  servicios.html ______________________**/
+
+.servicio-card {
+    margin: 0px 0px 30px 30px;
+    width: 90%;
+}
+
+#servicio-titulo {
+    font-size: 23px;
+}
+
+.servicio-texto {
+    margin-top: 30px;
+}
+
+.boton-reservar-cita a {
+    margin: 0px;
+}
+
+.servicio-img img {
+    width: 250px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/**____________________  reservar-cita.html ______________________**/
+
+.main-reservar {
+    flex-direction: column;
+}
+
+.contenedor-reservar {
+    margin: 80px 0px 0px 35px;
+    width: 90%;
+    height: 250px;
+}
+
+.reservar-titulo h1 {
+    font-size: 25px;
+}
+
+.reservar-texto {
+    font-size: 16px;
+}
+
+.formulario-reservar {
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+
+
+/**____________________  proyectos.html ______________________**/
+
+.contenedor-galeria {
+    margin: 0px 0px 50px 20px;
+
+}
+
+
+
+/**____________________  contacto.html ______________________**/
+
+.contenedor-contact {
+    height: 780px;
+    flex-direction: column-reverse;
+    margin: 0px 0px 50px 75px;
+    padding: 20px;
+}
+
+.contact-mapa iframe {
+    margin: 40px 0px 40px 40px;
+    height: 200px;
+}
+
+.contact-formulario form {
+    margin: 0px 0px 0px 60px;
+}
+
+#titulo-contact {
+    margin: 30px 0px 20px 0px;
+    padding: 0px;
+}
+
+
 }
