@@ -1,1108 +1,182 @@
-/**
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-font-family: 'Cinzel Decorative', cursive;
-
-COLORES:
-#cab8ff
-#fff9ec
-#805cec
-#f6f078
-
-**/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-
-
-
-
+ul {
+  list-style: none; }
 
 /** --------- HEADER --------- **/
-
 nav {
-    width: 100%;
-    height: 50px;
-    background-color: #cab8ff;
-    position: fixed;
-    display: grid;
-    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
-}
-
-.nav-bar {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.logo-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #cab8ff;
+  position: fixed;
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr); }
+  nav .logo-bar {
     width: 40px;
     height: 40px;
-    padding: 5px 0px 0px 5px
-}
-
-.nav-bar li {
-    font-size: 15px;
-    list-style: none;
-    padding: 5px 0px 0px 10px;
-}
-
-.nav-bar a {
+    padding: 5px 0px 0px 5px; }
+  nav .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+  nav .nav-bar li a {
     text-decoration: none;
+    font-family: "Cinzel Decorative", cursive;
     color: #805cec;
-    font-family: 'Cinzel Decorative', cursive;
     font-size: 15px;
     font-weight: 700;
+    margin-right: 20px;
     cursor: pointer;
-    transition: 0.5;
-}
-
-.nav-bar li:hover {
-    transform: scale(1.15);
-}
-
-.nav-bar a:hover {
-    color: #f6f078;
-}
-
+    transition: 0.5s; }
+  nav .nav-bar li:hover {
+    transform: scale(1.15); }
+  nav .nav-bar a:hover {
+    color: #f6f078; }
 
 /** --------- MAIN --------- **/
-
 .presentacion {
-    background-color: #cab8ff;
-    padding-top: 70px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-.contenedor-presentacion-inicial {
+  background-color: #cab8ff;
+  padding-top: 70px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  .presentacion .contenedor-presentacion-inicial {
     width: 70%;
     height: 400px;
     background-color: #fff9ec;
     box-shadow: 8px 8px 7px 0px #aba9af;
     border-radius: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-}
-
-.p-i-texto h1 {
-    color: #805cec;
-    font-size: 25px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.p-i-texto p {
-    color: #f6f078;
-    font-size: 23px;
-    font-weight: 500;
-    width: 400px;
-    height: 200px;
-    text-indent: 20px;
-    padding: 5px 0px 0px 20px;
-}
-
-.p-i-img {
-    width: 500px;
-    height: 350px;
-    margin: 20px 0px 0px 30px;
-}
-
-
-
-
-
-.contenedor-presentacion-secundaria {
-    display: flex;
-}
-
-.p-s-item {
-    margin: 40px 20px 20px ;
-    text-align: center;
-    justify-content: center;
-}
-
-.p-s-item p {
-    width: 250px;
-    height: 80px;
-    color: #ffffff;
-}
-
-.p-s-item img {
-    width: 120px;
-    height: 120px;
-}
-
-
-
-
-
+    align-items: center; }
+    .presentacion .contenedor-presentacion-inicial .p-i-texto h1 {
+      color: #805cec;
+      font-size: 25px;
+      font-family: "Cinzel Decorative", cursive; }
+    .presentacion .contenedor-presentacion-inicial .p-i-texto p {
+      color: #f6f078;
+      font-size: 23px;
+      font-weight: 500;
+      width: 400px;
+      height: 200px;
+      text-indent: 20px;
+      padding: 5px 0px 0px 20px; }
+    .presentacion .contenedor-presentacion-inicial .p-i-img {
+      width: 500px;
+      height: 350px;
+      margin: 20px 0px 0px 30px; }
+  .presentacion .contenedor-presentacion-secundaria {
+    display: flex; }
+    .presentacion .contenedor-presentacion-secundaria .p-s-item {
+      margin: 40px 20px 20px;
+      text-align: center;
+      justify-content: center; }
+      .presentacion .contenedor-presentacion-secundaria .p-s-item p {
+        width: 250px;
+        height: 80px;
+        color: #ffffff;
+        text-align: center; }
+      .presentacion .contenedor-presentacion-secundaria .p-s-item img {
+        width: 120px;
+        height: 120px; }
 
 .titulo-texto-svg {
-    display: flex;
-    justify-content: center;
-    padding: 40px 10px;
-}
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px; }
+  .titulo-texto-svg img {
+    width: 40px;
+    height: 40px; }
+  .titulo-texto-svg h1, .titulo-texto-svg h2 {
+    color: #805cec;
+    font-size: 30px;
+    font-family: "Cinzel Decorative", cursive;
+    padding: 0px 10px; }
 
 .titulo {
-    padding-top: 70px;
-}
-
-.titulo-texto-svg h1, h2 {
-    color: #805cec;
-    font-size: 30px ;
-    font-family: 'Cinzel Decorative', cursive;
-    padding: 0px 10px;
-}
-
-.titulo-texto-svg img {
-    width: 40px;
-    height: 40px;
-}
+  padding-top: 70px; }
 
 .galeria-img {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 220px;
-    margin-bottom: 30px;
-}
-
-.galeria-img img {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 220px;
+  margin-bottom: 30px; }
+  .galeria-img img {
     width: 350px;
     height: 250px;
     border-radius: 5px;
-    margin: 0px 20px 20px 0px;
-}
-
-
-
-
-
-
+    margin: 0px 20px 20px 0px; }
 
 /** --------- FOOTER --------- **/
-
 .footer {
-    background-color: #cab8ff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-
-.contenedor-contacto h3, h5 {
+  background-color: #cab8ff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px; }
+  .footer .contenedor-contacto h3, .footer .contenedor-contacto h5 {
     color: #ffffff;
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 25px;
-}
-
-.contacto-lista li {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 25px; }
+  .footer .contenedor-contacto .contacto-lista li {
     color: #805cec;
     list-style: none;
-    padding-left: 5px;
-}
-
-.contacto-lista i {
+    padding-left: 5px; }
+  .footer .contenedor-contacto .contacto-lista i {
     color: #ffffff;
     font-size: 25px;
     padding: 5px;
-    margin-left: 5px;
-}
-
-.iconos-footer i {
+    margin-left: 5px; }
+  .footer .contenedor-contacto .iconos-footer i {
     color: #ffffff;
     font-size: 25px;
     margin: 10px 0px 0px 20px;
-    transition: 1s;
-}
-
-.iconos-footer i:hover {
+    transition: 1s; }
+  .footer .contenedor-contacto .iconos-footer i:hover {
     color: #805cec;
     cursor: pointer;
-    transform: rotate(360deg) scale(1.7);
-}
-
-
-
-
-
-.contenedor-newsletter {
-    justify-content: space-between;
-}
-.newsletter-texto {
-    margin-bottom: 80px;
-}
-
-.newsletter-texto h4 {
-    color: #ffffff;
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 25px;
-}
-
-.newsletter-texto p {
-    color: #805cec;
-    width: 250px;
-    height: 40px;
-}
-
-.newsletter-input input {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 230px;
-    height: 25px;
-    padding: 10px 0px 10px 5px;
-    margin-bottom: 20px;
-}
-
-.newsletter-input ::placeholder {
-    color: #f6f078;
-}
-
-.newsletter-input a {
-    text-decoration: none;
-    font-family:  'Cinzel Decorative', cursive;
-    font-weight: 700;
-    color:#ffffff;
-    background-color: #805cec;
-    box-shadow: 8px 8px 10px -3px #979595bf;
-    border-radius: 20px;
-    padding: 5px 50px;
-    margin-left: 35px;
-    cursor: pointer;
-}
-
-
-
-
-
-/**__________________________  nosotros.html _________________________________**/
-
-.cards-nosotros {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-}
-
-.persona-card {
-    width: 300px;
-    height: 500px;
-    background-color: #cab8ff;
-    border-radius: 15px;
-    box-shadow: 8px 8px 5px 0px #805cec;
-}
-
-#nombre-persona {
-    color: #805cec;
-    font-size: 25px;
-    font-weight: 700;
-    font-family:  'Cinzel Decorative', cursive;
-    text-align: center;
-    margin: 10px 0px;
-}
-
-.persona-img img {
-    width: 260px;
-    height: 280px;
-    border-radius: 5px;
-    margin: 20px 20px;
-}
-
-.persona-lista li {
-    color: #ffffff;
-    font-size: 15px;
-    list-style: none;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-
-
-
-
-/**__________________________  servicios.html _________________________________**/
-
-.servicio-card {
-    width: 70%;
-    height: 300px;
-    background-color: #cab8ff;
-    border-radius: 15px;
-    box-shadow: 8px 8px 5px 0px #805cec;
-    margin: 0px 265px 30px 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#servicio-titulo {
-    color: #805cec;
-    font-size: 25px;
-    font-weight: 700;
-    font-family:  'Cinzel Decorative', cursive;
-    margin-bottom: 20px;
-}
-
-.servicio-texto {
-    margin: 50px 0px 0px 40px;
-}
-
-.servicio-texto p {
-    width: 350px;
-    height: 50px;
-    color: #ffffff;
-    font-size: 16px;
-    text-indent: 20px;
-    margin-bottom: 80px;
-}
-
-.boton-reservar-cita a {
-    background-color: #fff9ec;
-    color: #805cec;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    font-family:  'Cinzel Decorative', cursive;
-    box-shadow: 8px 8px 10px -3px #805cec;
-    border-radius: 20px;
-    padding: 5px 40px;
-    margin: 50px 0px 0px 80px;
-}
-
-.boton-reservar-cita i {
-    color: #805cec;
-    font-size: 15px;
-    padding-left: 15px;
-}
-
-.servicio-img img {
-    width: 300px;
-    height: 250px;
-    border-radius: 5px;
-    margin: 25px 50px 25px 0px;
-}
-
-
-
-/**__________________________  reservar-cita.html _________________________________**/
-
-
-
-.main-reservar {
-    display: flex;
-}
-
-.contenedor-reservar {
-    width: 500px;
-    height: 400px;
-    background-color: #cab8ff;
-    box-shadow: 8px 8px 10px -3px #aba9af;
-    border-radius: 20px;
-    margin: 80px 0px 0px 200px;
-}
-
-.reservar-titulo {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-}
-
-.reservar-titulo h1 {
-    color: #805cec;
-    font-size: 30px ;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.reservar-titulo img {
-    width: 40px;
-    height: 40px;
-}
-
-
-.reservar-texto {
-    color: #ffffff;
-    font-size: 20px;
-    text-indent: 20px;
-    padding: 0px 30px;
-}
-
-
-
-
-.formulario-reservar {
-    width: 500px;
-    height: 610px;
-    background-color: #f6f078;
-    box-shadow: 8px 8px 10px -3px #805cec;
-    border-radius: 20px;
-    margin: 80px 0px 50px 100px;
-    padding: 70px 40px;
-}
-
-#input-nombre {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 205px;
-    height: 25px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-#input-apellido {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 205px;
-    height: 25px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-#input-email {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 415px;
-    height: 25px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-#input-celular {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 415px;
-    height: 25px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-
-#input-opciones {
-    color: #6c6b70;
-    border-style: none;
-    border-radius: 5px;
-    width: 415px;
-    height: 25px;
-    padding-left: 10px;
-    margin-bottom: 40px;
-}
-
-#detalles {
-    width: 415px;
-    height: 150px;
-    border-style: none;
-    border-radius: 5px;
-    padding: 5px 0px 0px 10px;
-    resize: none;
-    margin-bottom: 10px;
-}
-
-#input-date {
-    color: #805cec;
-    width: 205px;
-    height: 25px;
-    border-style: none;
-    border-radius: 5px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-#input-time {
-    color: #805cec;
-    width: 205px;
-    height: 25px;
-    border-style: none;
-    border-radius: 5px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-}
-
-.radio-tipoCita{
-    color: #805cec;
-}
-
-.radio-tipoCita input {
-    font-size: 20px;
-    margin-bottom: 60px;
-}
-
-.formulario-boton a {
-    text-decoration: none;
-    font-family:  'Cinzel Decorative', cursive;
-    font-weight: 700;
-    color:#805cec;
-    background-color: #cab8ff;
-    box-shadow: 8px 8px 10px -3px #cbc2c2bf;
-    border-radius: 20px;
-    padding: 5px 50px;
-    margin-left: 125px;
-}
-
-
-
-
-/**__________________________  proyectos.html _________________________________**/
-
-.contenedor-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 30px;
-    margin: 0px 0px 40px 200px;
-}
-
-.contenedor-galeria img {
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
-    transition: 1s;
-}
-
-.contenedor-galeria img:hover {
-    cursor: pointer;
-    transform: scale(1.3);
-}
-
-
-
-/**__________________________  contacto.html _________________________________**/
-
-
-.contenedor-contact {
-    width: 80%;
-    height: 550px;
-    background-color: #cab8ff;
-    box-shadow: 8px 8px 10px -3px #805cec;
-    border-radius: 20px;
-    display: flex;
-    margin: 0px 0px 50px 150px;
-    padding: 60px;
-}
-
-
-
-
-.contact-mapa iframe {
-    border-radius: 10px;
-    width: 500px;
-    height: 430px;
-    margin-left: 20px;
-}
-
-.contact-formulario {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.contact-formulario form {
-    margin: 30px 0px 0px 100px;
-}
-
-
-
-#titulo-contact {
-    color: #805cec;
-    font-size: 20px ;
-    font-family: 'Cinzel Decorative', cursive;
-    text-align: center;
-    margin-left: 80px;
-}
-
-#input-nombre-contact {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 225px;
-    height: 25px;
-    padding: 15px 0px 15px 10px;
-    margin-bottom: 15px;
-}
-
-#input-apellido-contact {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 225px;
-    height: 25px;
-    padding: 15px 0px 15px 10px;
-    margin-bottom: 15px;
-}
-
-#input-email-contact {
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 455px;
-    height: 25px;
-    padding: 15px 0px 15px 10px;
-    margin-bottom: 15px;
-}
-
-#textarea-contact{
-    color: #805cec;
-    border-style: none;
-    border-radius: 5px;
-    width: 455px;
-    height: 200px;
-    padding: 5px 0px 0px 10px;
-    margin-bottom: 25px;
-    resize: none;
-}
-
-
-
-.boton-contact a {
-    text-decoration: none;
-    font-family:  'Cinzel Decorative', cursive;
-    font-weight: 700;
-    color:#ffffff;
-    background-color: #805cec;
-    box-shadow: 8px 8px 10px -3px #979595bf;
-    border-radius: 20px;
-    padding: 5px 50px;
-    margin-left: 145px;
-}
-
-
-
-.iconos-footer-contact {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 170px;
-}
-
-.iconos-footer-contact a{
-    color: #ffffff;
-    font-size: 25px;
-    margin: 10px 0px 0px 20px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.iconos-footer-contact a:hover {
-    color: #805cec;
-    transform: scale(1.7) rotate(360deg);
-}
-
-
-
-
-@media (max-width: 768px) {
-
-/**____________________ index.html ______________________**/
-
-
-/**------------- main -------------**/
-
-.contenedor-presentacion-inicial {
-    width: 90%;
-    height: 200px;
-    padding-top: 50px;
-
-}
-
-.p-i-texto h1 {
-    font-size: 20px;
-    padding-top: 80px;
-}
-
-.p-i-texto p {
-    font-size: 18px;
-}
-
-.p-i-img {
-    width: 250px;
-    height: 200px;
-    margin: 5px;
-}
-
-.p-s-item p {
-    width: 180px;
-}
-
-.p-s-item img {
-    width: 70px;
-    height: 70px;
-}
-
-.titulo-texto-svg h1, h2 {
-    font-size: 25px;
-}
-
-.titulo-texto-svg img {
-    width: 30px;
-    height: 30px;
-}
-
-.galeria-img {
-    margin-left: 20px;
-}
-
-.img-inicio-2, .img-inicio-3, .img-inicio-5, .img-inicio-6 {
-    display: none;
-}
-
-
-
-
-/**____________________  sobre-nosotros.html ______________________**/
-
-.cards-nosotros {
-    flex-flow: row wrap;
-}
-
-.persona-card {
-    margin-top: 30px;
-}
-
-
-
-
-/**____________________  servicios.html ______________________**/
-
-.servicio-card {
-    margin: 0px 0px 30px 30px;
-    width: 90%;
-}
-
-#servicio-titulo {
-    font-size: 23px;
-}
-
-.servicio-texto {
-    margin-top: 30px;
-}
-
-.boton-reservar-cita a {
-    margin: 0px;
-}
-
-.servicio-img img {
-    width: 250px;
-    height: 200px;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-
-
-
-
-/**____________________  reservar-cita.html ______________________**/
-
-.main-reservar {
-    flex-direction: column;
-}
-
-.contenedor-reservar {
-    margin: 80px 0px 0px 35px;
-    width: 90%;
-    height: 250px;
-}
-
-.reservar-titulo h1 {
-    font-size: 25px;
-}
-
-.reservar-texto {
-    font-size: 16px;
-}
-
-.formulario-reservar {
-    margin-left: 130px;
-    margin-top: 50px;
-}
-
-
-
-/**____________________  proyectos.html ______________________**/
-
-.contenedor-galeria {
-    margin: 0px 0px 50px 20px;
-
-}
-
-
-
-/**____________________  contacto.html ______________________**/
-
-.contenedor-contact {
-    height: 780px;
-    flex-direction: column-reverse;
-    margin: 0px 0px 50px 75px;
-    padding: 20px;
-}
-
-.contact-mapa iframe {
-    margin: 40px 0px 40px 40px;
-    height: 200px;
-}
-
-.contact-formulario form {
-    margin: 0px 0px 0px 60px;
-}
-
-#titulo-contact {
-    margin: 30px 0px 20px 0px;
-    padding: 0px;
-}
-
-
-}
-
-
-
-@media (max-width: 320px) {
-/**____________________ index.html ______________________**/
-
-/**------------- header -------------**/
-
-nav {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #805cec;
-}
-
-.nav-bar {
-    flex-direction: column;
-}
-
-
-
-/**------------- main -------------**/
-
-.p-i-texto h1 {
-    font-size: 18px;
-    width: 250px;
-    text-align: center;
-}
-
-.p-i-texto p {
-    font-size: 17px;
-    width: 250px;
-    margin-bottom: 50px;
-}
-
-.p-i-img {
-    display: none;
-}
-
-.contenedor-presentacion-secundaria {
-    flex-direction: column;
-}
-
-.galeria-img img {
-    flex-direction: column;
-    width: 280px;
-    height: 180px;
-}
-
-
-/**------------- footer -------------**/
-
-.footer {
-    flex-direction: column;
-}
-
-.contenedor-contacto {
-    margin-bottom: 40px;
-}
-
-.contenedor-contacto h3, h5 {
-    font-size: 20px;
-}
-
-.iconos-footer {
-    margin-top: 10px;
-}
-
-.contenedor-newsletter {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.newsletter-texto h4 {
-    font-size: 20px;
-}
-
-.newsletter-input a {
-    margin-left: 10px;
-}
-
-
-/**____________________ nosotros.html ______________________**/
-
-.persona-card {
-    width: 280px;
-    height: 450px;
-}
-
-#nombre-persona {
-    font-size: 20px;
-}
-
-.persona-img img {
-    width: 240px;
-    height: 230px;
-}
-
-
-/**____________________ servicios.html ______________________**/
-
-.servicio-card {
-    width: 280;
-    height: 550px;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-bottom: 40px;
-}
-
-.servicio-texto {
-    margin-left: 20px;
-}
-
-.servicio-texto p {
-    width: 250px;
-    height: 60px;
-}
-
-.boton-reservar-cita a {
-    font-size: 18px;
-    margin-left: 0px;
-    padding: 5px 10px;
-}
-
-
-/**____________________ reservar-cita.html __________________**/
-
-.contenedor-reservar {
-    margin-left: 15px;
-    margin-top: 20px;
-    height: 400px;
-}
-
-.reservar-titulo h1 {
-    font-size: 20px;
-}
-
-.reservar-titulo img {
-    width: 25px;
-    height: 25px;
-}
-
-.formulario-reservar {
-    margin-left: 15px;
-    margin-top: 20px;
-    width: 290px;
-    height: 700px;
-    flex-direction: column;
-}
-
-#input-nombre {
-    width: 215px;
-}
-
-#input-apellido {
-    width: 215px;
-}
-
-#input-email {
-    width: 215px;
-}
-
-#input-celular {
-    width: 215px;
-}
-
-#input-opciones {
-    width: 215px;
-}
-
-#detalles {
-    width: 215px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-#input-date {
-    width: 215px;
-}
-
-#input-time {
-    width: 215px;
-}
-
-.formulario-boton a {
-    margin-left: 25px;
-}
-
-
-/**____________________ proyectos.html ______________________**/
-
-.contenedor-galeria img {
-    flex-direction: column;
-    width: 280px;
-    height: 180px;
-}
-
-
-/**____________________ contactos.html ______________________**/
-
-.contenedor-contact {
-    width: 280px;
-    height: 500px;
-    margin-left: 20px;
-    flex-direction: column;
-}
-
-.contact-mapa iframe {
-    display: none;
-}
-.contact-formulario form {
-    margin-left: 0px;
-}
-
-#titulo-contact {
-    font-size: 18px;
-}
-
-#input-nombre-contact {
-    width: 240px;
-}
-
-#input-apellido-contact {
-    width: 240px;
-}
-
-#input-email-contact {
-    width: 240px;
-}
-
-#textarea-contact {
-    width: 240px;
-    height: 100px;
-}
-
-.boton-contact a {
-    margin-left: 40px;
-}
-
-.iconos-footer-contact {
-    padding: 0px 0px 30px 55px;
-}
-}
+    transform: rotate(360deg) scale(1.7); }
+  .footer .contenedor-newsletter {
+    justify-content: space-between; }
+    .footer .contenedor-newsletter .newsletter-texto {
+      margin-bottom: 80px; }
+      .footer .contenedor-newsletter .newsletter-texto h4 {
+        color: #ffffff;
+        font-family: "Cinzel Decorative", cursive;
+        font-size: 25px; }
+      .footer .contenedor-newsletter .newsletter-texto p {
+        color: #805cec;
+        width: 250px;
+        height: 40px; }
+    .footer .contenedor-newsletter .newsletter-input input {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 230px;
+      height: 25px;
+      padding: 10px 0px 10px 5px;
+      margin-bottom: 20px; }
+    .footer .contenedor-newsletter .newsletter-input input::placeholder {
+      color: #f6f078; }
+    .footer .contenedor-newsletter .newsletter-input a {
+      text-decoration: none;
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #805cec;
+      box-shadow: 8px 8px 10px -3px #979595bf;
+      border-radius: 20px;
+      padding: 5px 50px;
+      margin-left: 35px;
+      cursor: pointer; }
+    .footer .contenedor-newsletter .newsletter-input a:hover {
+      background-color: #f6f078;
+      color: #805cec; }
