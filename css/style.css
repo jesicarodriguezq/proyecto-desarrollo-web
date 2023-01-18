@@ -114,6 +114,292 @@ nav {
     border-radius: 5px;
     margin: 0px 20px 20px 0px; }
 
+/*------------------------ nosotros.html ------------------------*/
+.cards-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px; }
+  .cards-nosotros .persona-card {
+    width: 300px;
+    height: 500px;
+    background-color: #cab8ff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px #805cec; }
+    .cards-nosotros .persona-card .persona-img img {
+      width: 260px;
+      height: 280px;
+      border-radius: 5px;
+      margin: 20px 20px; }
+    .cards-nosotros .persona-card #nombre-persona {
+      color: #805cec;
+      font-size: 25px;
+      font-weight: 700;
+      font-family: "Cinzel Decorative", cursive;
+      text-align: center;
+      margin: 10px 0px; }
+    .cards-nosotros .persona-card .persona-lista li {
+      color: #ffffff;
+      font-size: 15px;
+      text-align: center;
+      padding-bottom: 5px; }
+
+/*------------------------ servicios.html ------------------------*/
+.servicio-card {
+  width: 70%;
+  height: 300px;
+  background-color: #cab8ff;
+  border-radius: 15px;
+  box-shadow: 8px 8px 5px 0px #805cec;
+  margin: 0px 265px 30px 250px;
+  display: flex;
+  justify-content: space-between; }
+  .servicio-card .servicio-texto {
+    margin: 50px 0px 0px 40px; }
+    .servicio-card .servicio-texto #servicio-titulo {
+      color: #805cec;
+      font-size: 25px;
+      font-weight: 700;
+      font-family: "Cinzel Decorative", cursive;
+      margin-bottom: 20px; }
+    .servicio-card .servicio-texto p {
+      width: 350px;
+      height: 50px;
+      color: #ffffff;
+      font-size: 16px;
+      text-indent: 20px;
+      margin-bottom: 80px; }
+    .servicio-card .servicio-texto .boton-reservar-cita a {
+      background-color: #fff9ec;
+      color: #805cec;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: "Cinzel Decorative", cursive;
+      box-shadow: 8px 8px 10px -3px #805cec;
+      border-radius: 20px;
+      padding: 5px 40px;
+      margin: 50px 0px 0px 80px; }
+      .servicio-card .servicio-texto .boton-reservar-cita a i {
+        color: #805cec;
+        font-size: 15px;
+        padding-left: 15px; }
+    .servicio-card .servicio-texto .boton-reservar-cita a:hover {
+      background-color: #805cec;
+      color: #f6f078; }
+      .servicio-card .servicio-texto .boton-reservar-cita a:hover i {
+        color: #f6f078; }
+  .servicio-card .servicio-img img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 25px 50px 25px 0px; }
+
+/*------------------------ reservar-cita.html ------------------------*/
+.main-reservar {
+  display: flex; }
+  .main-reservar .contenedor-reservar {
+    width: 500px;
+    height: 400px;
+    background-color: #cab8ff;
+    box-shadow: 8px 8px 10px -3px #aba9af;
+    border-radius: 20px;
+    margin: 80px 0px 0px 200px; }
+    .main-reservar .contenedor-reservar .reservar-titulo {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0px; }
+      .main-reservar .contenedor-reservar .reservar-titulo h1 {
+        color: #805cec;
+        font-size: 30px;
+        font-family: "Cinzel Decorative", cursive; }
+      .main-reservar .contenedor-reservar .reservar-titulo img {
+        width: 40px;
+        height: 40px; }
+    .main-reservar .contenedor-reservar .reservar-texto p {
+      color: #ffffff;
+      font-size: 20px;
+      text-indent: 20px;
+      padding: 0px 30px; }
+  .main-reservar .formulario-reservar {
+    width: 500px;
+    background-color: #f6f078;
+    height: 610px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px -3px #805cec;
+    margin: 80px 0px 50px 100px;
+    padding: 70px 40px; }
+    .main-reservar .formulario-reservar form .input-superior #input-nombre {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 205px;
+      height: 25px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form .input-superior #input-apellido {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 205px;
+      height: 25px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form .input-superior #input-email {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 415px;
+      height: 25px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form .input-superior #input-celular {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 415px;
+      height: 25px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form #input-opciones {
+      color: #6c6b70;
+      border-style: none;
+      border-radius: 5px;
+      width: 415px;
+      height: 25px;
+      padding-left: 10px;
+      margin-bottom: 40px; }
+    .main-reservar .formulario-reservar form #detalles {
+      width: 415px;
+      height: 150px;
+      border-style: none;
+      border-radius: 5px;
+      padding: 5px 0px 0px 10px;
+      resize: none;
+      margin-bottom: 10px; }
+    .main-reservar .formulario-reservar form #input-date {
+      color: #805cec;
+      width: 205px;
+      height: 25px;
+      border-style: none;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form #input-time {
+      color: #805cec;
+      width: 205px;
+      height: 25px;
+      border-style: none;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-bottom: 15px; }
+    .main-reservar .formulario-reservar form .radio-tipoCita {
+      color: #805cec; }
+      .main-reservar .formulario-reservar form .radio-tipoCita input {
+        font-size: 20px;
+        margin-bottom: 60px; }
+    .main-reservar .formulario-reservar .formulario-boton a {
+      text-decoration: none;
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: 700;
+      color: #805cec;
+      background-color: #cab8ff;
+      box-shadow: 8px 8px 10px -3px #cbc2c2bf;
+      border-radius: 20px;
+      padding: 5px 50px;
+      margin-left: 125px; }
+    .main-reservar .formulario-reservar .formulario-boton a:hover {
+      background-color: #805cec;
+      color: #f6f078; }
+
+/*------------------------ proyectos.html ------------------------*/
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin: 0px 0px 40px 200px; }
+  .contenedor-galeria img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    transition: 1s; }
+  .contenedor-galeria img:hover {
+    cursor: pointer;
+    transform: scale(1.3); }
+
+/*------------------------ contactos.html ------------------------*/
+.contenedor-contact {
+  width: 80%;
+  height: 550px;
+  background-color: #cab8ff;
+  box-shadow: 8px 8px 10px -3px #805cec;
+  border-radius: 20px;
+  display: flex;
+  margin: 0px 0px 50px 150px;
+  padding: 60px; }
+  .contenedor-contact iframe {
+    border-radius: 10px;
+    width: 500px;
+    height: 430px;
+    margin-left: 20px; }
+
+.contact-formulario {
+  display: flex;
+  flex-flow: column wrap; }
+  .contact-formulario #titulo-contact {
+    color: #805cec;
+    font-size: 20px;
+    font-family: "Cinzel Decorative", cursive;
+    text-align: center;
+    margin-left: 80px; }
+  .contact-formulario form {
+    margin: 30px 0px 0px 100px; }
+    .contact-formulario form #input-nombre-contact {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 225px;
+      height: 25px;
+      padding: 15px 0px 15px 10px;
+      margin-bottom: 15px; }
+    .contact-formulario form #input-apellido-contact {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 225px;
+      height: 25px;
+      padding: 15px 0px 15px 10px;
+      margin-bottom: 15px; }
+    .contact-formulario form #input-email-contact {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 455px;
+      height: 25px;
+      padding: 15px 0px 15px 10px;
+      margin-bottom: 15px; }
+    .contact-formulario form #textarea-contact {
+      color: #805cec;
+      border-style: none;
+      border-radius: 5px;
+      width: 455px;
+      height: 200px;
+      padding: 5px 0px 0px 10px;
+      margin-bottom: 25px;
+      resize: none; }
+    .contact-formulario form .boton-contact a {
+      text-decoration: none;
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #805cec;
+      box-shadow: 8px 8px 10px -3px #979595bf;
+      border-radius: 20px;
+      padding: 5px 50px;
+      margin-left: 145px; }
+    .contact-formulario form .boton-contact a:hover {
+      background-color: #f6f078;
+      color: #805cec; }
+
 /** --------- FOOTER --------- **/
 .footer {
   background-color: #cab8ff;
@@ -180,3 +466,19 @@ nav {
     .footer .contenedor-newsletter .newsletter-input a:hover {
       background-color: #f6f078;
       color: #805cec; }
+
+/*------------------------ contactos.html ------------------------*/
+footer .iconos-footer-contact {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 170px; }
+  footer .iconos-footer-contact a {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px 0px 0px 20px;
+    cursor: pointer;
+    transition: 1s; }
+  footer .iconos-footer-contact a:hover {
+    color: #805cec;
+    transform: scale(1.7) rotate(360deg); }

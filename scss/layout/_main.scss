@@ -84,3 +84,365 @@
         margin: 0px 20px 20px 0px;
     }
 }
+
+/*------------------------ nosotros.html ------------------------*/
+
+.cards-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    .persona-card {
+        width: 300px;
+        height: 500px;
+        background-color: $color-lila;
+        border-radius: 15px;
+        box-shadow: 8px 8px 5px 0px $color-violeta;
+        .persona-img {
+            img {
+            width: 260px;
+            height: 280px;
+            border-radius: 5px;
+            margin: 20px 20px;
+            }
+        }
+        #nombre-persona {
+            color: $color-violeta;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: $tipografia-titulo;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .persona-lista {
+            li {
+                color: #ffffff;
+                font-size: 15px;
+                text-align: center;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+/*------------------------ servicios.html ------------------------*/
+
+.servicio-card {
+    width: 70%;
+    height: 300px;
+    background-color: $color-lila;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px $color-violeta;
+    margin: 0px 265px 30px 250px;
+    display: flex;
+    justify-content: space-between;
+    .servicio-texto {
+        margin: 50px 0px 0px 40px;
+        #servicio-titulo {
+            color: $color-violeta;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: $tipografia-titulo;
+            margin-bottom: 20px;
+        }
+        p {
+            width: 350px;
+            height: 50px;
+            color: #ffffff;
+            font-size: 16px;
+            text-indent: 20px;
+            margin-bottom: 80px;
+        }
+        .boton-reservar-cita {
+            a {
+                background-color: #fff9ec;
+                color: $color-violeta;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: $tipografia-titulo;
+                box-shadow: 8px 8px 10px -3px $color-violeta;
+                border-radius: 20px;
+                padding: 5px 40px;
+                margin: 50px 0px 0px 80px;
+                i {
+                    color: $color-violeta;
+                    font-size: 15px;
+                    padding-left: 15px;
+                }
+            }
+            a:hover {
+                background-color: $color-violeta;
+                color: $color-amarillo;
+                i {
+                    color: $color-amarillo;
+                }
+            }
+        }
+    }
+    .servicio-img {
+        img {
+            width: 300px;
+            height: 250px;
+            border-radius: 5px;
+            margin: 25px 50px 25px 0px;
+        }
+    }
+}
+
+/*------------------------ reservar-cita.html ------------------------*/
+
+.main-reservar {
+    display: flex;
+    .contenedor-reservar {
+        width: 500px;
+        height: 400px;
+        background-color: $color-lila;
+        box-shadow: 8px 8px 10px -3px #aba9af;
+        border-radius: 20px;
+        margin: 80px 0px 0px 200px;
+        .reservar-titulo {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0px;
+            h1 {
+                color: $color-violeta;
+                font-size: 30px ;
+                font-family: $tipografia-titulo;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .reservar-texto {
+            p {
+                color: #ffffff;
+                font-size: 20px;
+                text-indent: 20px;
+                padding: 0px 30px;
+            }
+        }
+    }
+    .formulario-reservar {
+        width: 500px;
+        background-color: $color-amarillo;
+        height: 610px;
+        border-radius: 20px;
+        box-shadow: 8px 8px 10px -3px $color-violeta;
+        margin: 80px 0px 50px 100px;
+        padding: 70px 40px;
+        form {
+            .input-superior {
+                #input-nombre {
+                    color: $color-violeta;
+                    border-style: none;
+                    border-radius: 5px;
+                    width: 205px;
+                    height: 25px;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                }
+                #input-apellido {
+                    color: $color-violeta;
+                    border-style: none;
+                    border-radius: 5px;
+                    width: 205px;
+                    height: 25px;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                }
+                
+                #input-email {
+                    color: $color-violeta;
+                    border-style: none;
+                    border-radius: 5px;
+                    width: 415px;
+                    height: 25px;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                }
+                
+                #input-celular {
+                    color: $color-violeta;
+                    border-style: none;
+                    border-radius: 5px;
+                    width: 415px;
+                    height: 25px;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                }
+            }
+            #input-opciones {
+                color: #6c6b70;
+                border-style: none;
+                border-radius: 5px;
+                width: 415px;
+                height: 25px;
+                padding-left: 10px;
+                margin-bottom: 40px;
+            }
+            #detalles {
+                width: 415px;
+                height: 150px;
+                border-style: none;
+                border-radius: 5px;
+                padding: 5px 0px 0px 10px;
+                resize: none;
+                margin-bottom: 10px;
+            }
+            
+            #input-date {
+                color: $color-violeta;
+                width: 205px;
+                height: 25px;
+                border-style: none;
+                border-radius: 5px;
+                padding-left: 10px;
+                margin-bottom: 15px;
+            }
+            
+            #input-time {
+                color: $color-violeta;
+                width: 205px;
+                height: 25px;
+                border-style: none;
+                border-radius: 5px;
+                padding-left: 10px;
+                margin-bottom: 15px;
+            }
+            .radio-tipoCita {
+                color: $color-violeta;
+                input {
+                    font-size: 20px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .formulario-boton {
+            a {
+                text-decoration: none;
+                font-family: $tipografia-titulo;
+                font-weight: 700;
+                color: $color-violeta;
+                background-color: $color-lila;
+                box-shadow: 8px 8px 10px -3px #cbc2c2bf;
+                border-radius: 20px;
+                padding: 5px 50px;
+                margin-left: 125px;
+            }
+            a:hover {
+                background-color: $color-violeta;
+                color: $color-amarillo;
+            }
+        }
+    }
+}
+
+/*------------------------ proyectos.html ------------------------*/
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin: 0px 0px 40px 200px;
+    img {
+        width: 350px;
+        height: 250px;
+        border-radius: 5px;
+        transition: 1s;
+    }
+    img:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+}
+
+/*------------------------ contactos.html ------------------------*/
+
+.contenedor-contact {
+    width: 80%;
+    height: 550px;
+    background-color: $color-lila;
+    box-shadow: 8px 8px 10px -3px $color-violeta;
+    border-radius: 20px;
+    display: flex;
+    margin: 0px 0px 50px 150px;
+    padding: 60px;
+    iframe {
+        border-radius: 10px;
+        width: 500px;
+        height: 430px;
+        margin-left: 20px;
+    }
+}
+.contact-formulario {
+    display: flex;
+    flex-flow: column wrap;
+    #titulo-contact {
+        color: $color-violeta;
+        font-size: 20px ;
+        font-family: $tipografia-titulo;
+        text-align: center;
+        margin-left: 80px;
+    }
+    form {
+        margin: 30px 0px 0px 100px;
+        #input-nombre-contact {
+            color: $color-violeta;
+            border-style: none;
+            border-radius: 5px;
+            width: 225px;
+            height: 25px;
+            padding: 15px 0px 15px 10px;
+            margin-bottom: 15px;
+        }
+        
+        #input-apellido-contact {
+            color: $color-violeta;
+            border-style: none;
+            border-radius: 5px;
+            width: 225px;
+            height: 25px;
+            padding: 15px 0px 15px 10px;
+            margin-bottom: 15px;
+        }
+        
+        #input-email-contact {
+            color: $color-violeta;
+            border-style: none;
+            border-radius: 5px;
+            width: 455px;
+            height: 25px;
+            padding: 15px 0px 15px 10px;
+            margin-bottom: 15px;
+        }
+        
+        #textarea-contact{
+            color: $color-violeta;
+            border-style: none;
+            border-radius: 5px;
+            width: 455px;
+            height: 200px;
+            padding: 5px 0px 0px 10px;
+            margin-bottom: 25px;
+            resize: none;
+        }
+        .boton-contact {
+            a {
+                text-decoration: none;
+                font-family: $tipografia-titulo;
+                font-weight: 700;
+                color:#ffffff;
+                background-color: $color-violeta;
+                box-shadow: 8px 8px 10px -3px #979595bf;
+                border-radius: 20px;
+                padding: 5px 50px;
+                margin-left: 145px;
+            }
+            a:hover {
+                background-color: $color-amarillo;
+                color: $color-violeta;
+            }
+        }
+    }
+}

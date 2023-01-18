@@ -87,3 +87,25 @@
         }
     }
 }
+
+/*------------------------ contactos.html ------------------------*/
+
+footer {
+    .iconos-footer-contact {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 170px;
+        a{
+            color: #ffffff;
+            font-size: 25px;
+            margin: 10px 0px 0px 20px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        a:hover {
+            color: #805cec;
+            transform: scale(1.7) rotate(360deg);
+        }
+    }
+}
