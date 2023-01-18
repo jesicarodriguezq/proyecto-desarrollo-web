@@ -1,0 +1,34 @@
+@media (max-width: 320px) {
+    .footer {
+        flex-direction: column;
+        .contenedor-contacto {
+            margin-bottom: 40px;
+            h3, h5 {
+                font-size: 20px;
+            }
+            .iconos-footer {
+                margin-top: 10px;
+            }
+        }
+        .contenedor-newsletter {
+            margin-bottom: 10px;
+            text-align: center;
+            .newsletter-texto {
+                h4 {
+                font-size: 20px;
+                }
+            }
+            .newsletter-input {
+                a {
+                margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+
+/**____________________ contactos.html ______________________**/
+    .iconos-footer-contact {
+        padding: 0px 0px 30px 55px;
+    }
+}

@@ -565,3 +565,142 @@ footer .iconos-footer-contact {
       padding: 0px; }
     .contenedor-contact .contact-formulario form {
       margin: 0px 0px 0px 60px; } }
+
+@media (max-width: 320px) {
+  nav {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #805cec; }
+    nav .nav-bar {
+      flex-direction: column; } }
+
+@media (max-width: 320px) {
+  /**____________________ index.html ______________________**/
+  .presentacion .contenedor-presentacion-inicial .p-i-texto h1 {
+    font-size: 18px;
+    width: 250px;
+    text-align: center; }
+  .presentacion .contenedor-presentacion-inicial .p-i-texto p {
+    font-size: 17px;
+    width: 250px;
+    margin-bottom: 50px; }
+  .presentacion .contenedor-presentacion-inicial .p-i-img {
+    display: none; }
+  .presentacion .contenedor-presentacion-secundaria {
+    flex-direction: column; }
+  .galeria-img img {
+    flex-direction: column;
+    width: 280px;
+    height: 180px; }
+  /**____________________ nosotros.html ______________________**/
+  .cards-nosotros .persona-card {
+    width: 280px;
+    height: 450px; }
+    .cards-nosotros .persona-card #nombre-persona {
+      font-size: 20px; }
+    .cards-nosotros .persona-card .persona-img img {
+      width: 240px;
+      height: 230px; }
+  /**____________________ servicios.html ______________________**/
+  .cards-servicios .servicio-card {
+    width: 280;
+    height: 550px;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-bottom: 40px; }
+    .cards-servicios .servicio-card .servicio-texto {
+      margin-left: 20px; }
+      .cards-servicios .servicio-card .servicio-texto p {
+        width: 250px;
+        height: 60px; }
+      .cards-servicios .servicio-card .servicio-texto .boton-reservar-cita a {
+        font-size: 18px;
+        margin-left: 0px;
+        padding: 5px 10px; }
+  /**____________________ reservar-cita.html ______________________**/
+  .main-reservar .contenedor-reservar {
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 500px; }
+    .main-reservar .contenedor-reservar .reservar-titulo h1 {
+      font-size: 20px; }
+    .main-reservar .contenedor-reservar .reservar-titulo img {
+      width: 25px;
+      height: 25px; }
+  .main-reservar .formulario-reservar {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 290px;
+    height: 700px;
+    flex-direction: column; }
+    .main-reservar .formulario-reservar form .input-superior #input-nombre {
+      width: 215px; }
+    .main-reservar .formulario-reservar form .input-superior #input-apellido {
+      width: 215px; }
+    .main-reservar .formulario-reservar form .input-superior #input-email {
+      width: 215px; }
+    .main-reservar .formulario-reservar form .input-superior #input-celular {
+      width: 215px; }
+    .main-reservar .formulario-reservar form #input-opciones {
+      width: 215px; }
+    .main-reservar .formulario-reservar form #detalles {
+      width: 215px;
+      height: 100px;
+      margin-bottom: 20px; }
+    .main-reservar .formulario-reservar form #input-date {
+      width: 215px; }
+    .main-reservar .formulario-reservar form #input-time {
+      width: 215px; }
+    .main-reservar .formulario-reservar form .formulario-boton a {
+      margin-left: 25px; }
+  /**____________________ proyectos.html ______________________**/
+  .contenedor-galeria img {
+    flex-direction: column;
+    width: 280px;
+    height: 180px; }
+  /**____________________ contactos.html ______________________**/
+  .contenedor-contact {
+    width: 280px;
+    height: 500px;
+    margin-left: 20px;
+    flex-direction: column; }
+    .contenedor-contact .contact-mapa iframe {
+      display: none; }
+    .contenedor-contact .contact-formulario #titulo-contact {
+      font-size: 18px; }
+    .contenedor-contact .contact-formulario form {
+      margin-left: 0px; }
+      .contenedor-contact .contact-formulario form #input-nombre-contact {
+        width: 240px; }
+      .contenedor-contact .contact-formulario form #input-apellido-contact {
+        width: 240px; }
+      .contenedor-contact .contact-formulario form #input-email-contact {
+        width: 240px; }
+      .contenedor-contact .contact-formulario form #textarea-contact {
+        width: 240px;
+        height: 100px; }
+      .contenedor-contact .contact-formulario form .boton-contact a {
+        margin-left: 40px; } }
+
+@media (max-width: 320px) {
+  .footer {
+    flex-direction: column; }
+    .footer .contenedor-contacto {
+      margin-bottom: 40px; }
+      .footer .contenedor-contacto h3, .footer .contenedor-contacto h5 {
+        font-size: 20px; }
+      .footer .contenedor-contacto .iconos-footer {
+        margin-top: 10px; }
+    .footer .contenedor-newsletter {
+      margin-bottom: 10px;
+      text-align: center; }
+      .footer .contenedor-newsletter .newsletter-texto h4 {
+        font-size: 20px; }
+      .footer .contenedor-newsletter .newsletter-input a {
+        margin-left: 10px; }
+  /**____________________ contactos.html ______________________**/
+  .iconos-footer-contact {
+    padding: 0px 0px 30px 55px; } }
