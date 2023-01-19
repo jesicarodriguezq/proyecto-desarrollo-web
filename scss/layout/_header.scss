@@ -15,22 +15,23 @@ nav {
     .nav-bar {
         @include flex(row, center, center);
         gap: 20px;
-    }
-    .nav-bar li a{
-        text-decoration: none;
-        font-family: $tipografia-titulo;
-        color: $color-violeta;
-        font-size: 15px;
-        font-weight: 700;
-        margin-right: 20px;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .nav-bar li:hover {
-        transform: scale(1.15);
-    }
-    
-    .nav-bar a:hover {
-        color: $color-amarillo;
+        li {
+            a{
+                text-decoration: none;
+                font-family: $tipografia-titulo;
+                color: $color-violeta;
+                font-size: 15px;
+                font-weight: 700;
+                margin-right: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+        li:hover {
+            transform: scale(1.15);
+            a:hover {
+                color: $color-amarillo;
+            }
+        }
     }
 }

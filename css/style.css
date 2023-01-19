@@ -25,19 +25,19 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px; }
-  nav .nav-bar li a {
-    text-decoration: none;
-    font-family: "Cinzel Decorative", cursive;
-    color: #805cec;
-    font-size: 15px;
-    font-weight: 700;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: 0.5s; }
-  nav .nav-bar li:hover {
-    transform: scale(1.15); }
-  nav .nav-bar a:hover {
-    color: #f6f078; }
+    nav .nav-bar li a {
+      text-decoration: none;
+      font-family: "Cinzel Decorative", cursive;
+      color: #805cec;
+      font-size: 15px;
+      font-weight: 700;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: 0.5s; }
+    nav .nav-bar li:hover {
+      transform: scale(1.15); }
+      nav .nav-bar li:hover a:hover {
+        color: #f6f078; }
 
 /** --------- MAIN --------- **/
 .presentacion {
