@@ -6,8 +6,8 @@ Proyecto destinado a venta de productos para la publicidad mediante productos gr
 
 ## Desarrollara Web
 Jesica Rodríguez
-:tw-1f30e: Argentina
-:tw-2709: jesicarodriguezq@gmail.com
+Argentina
+Contacto: jesicarodriguezq@gmail.com
 
 ## Paleta de colores
 - violeta: #805cec;
